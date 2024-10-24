@@ -19,20 +19,27 @@
             padding: 0; 
             font-weight: bold; 
         }
+        .tagline {
+            font-size: 1.5em; /* Smaller size for the tagline */
+            text-align: center; /* Center align the tagline */
+            margin: 10px 0; /* Space above and below the tagline */
+            color: #333; /* Color for the tagline */
+        }
         h2, h3 {
             font-weight: bold; /* Bolder text for headings */
         }
         nav {
             display: flex; /* Use flexbox for layout */
-            justify-content: space-between; /* Space between left and right */
-            align-items: center; /* Center items vertically */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items */
             padding: 15px 20px; /* Increased padding for nav */
             background-color: #add8e6; /* Background for nav */
-            height: 60px; /* Set a fixed height for the navbar */
+            height: auto; /* Allow height to adjust based on content */
         }
         .nav-title {
             font-weight: bold; /* Make it bold */
             font-size: 1.5em; /* Increased size for the title */
+            margin-bottom: 5px; /* Space below the title */
         }
         nav a {
             margin: 0 10px; /* Reduced margin for closer spacing */
@@ -57,18 +64,13 @@
             max-width: 900px; /* Increased max width for the image */
             height: auto;
         }
-        .tagline {
-            font-size: 1.2em; /* Smaller size for the tagline */
-            text-align: center; /* Center align the tagline */
-            margin: 10px 0; /* Space above and below the tagline */
-            color: #333; /* Color for the tagline */
-        }
     </style>
 </head>
 <body>
 
     <nav>
         <div class="nav-title">City of Trimble</div> <!-- Bold and larger text -->
+        <div class="tagline">The City by the Lake!</div> <!-- Tagline under the navbar -->
         <div>
             <a href="#">Home</a>
             <a href="pages/documents.html">Forms & Documents</a>
@@ -79,13 +81,11 @@
 
     <header>
         <h1>City of Trimble</h1>
-        <div class="tagline">The City by the Lake!</div> <!-- Tagline under the navbar -->
     </header>
 
     <main>
         <section class="image-section">
             <img src="img/Trimble.png" alt="Welcome to Trimble">
-            <h2>City of Trimble</h2>
         </section>
 
         <section style="text-align: center;">
