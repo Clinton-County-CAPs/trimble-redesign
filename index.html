@@ -23,9 +23,10 @@
             font-weight: bold; /* Bolder text for headings */
         }
         nav {
-            display: flex; /* Use flexbox for even spacing */
-            justify-content: center; /* Center the nav items */
-            padding: 10px 0; /* Add vertical padding */
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between left and right */
+            align-items: center; /* Center items vertically */
+            padding: 10px 20px; /* Add padding for nav */
             background-color: #add8e6; /* Background for nav */
         }
         nav a {
@@ -54,14 +55,18 @@
 </head>
 <body>
 
-    <header>
-        <h1>City of Trimble</h1>
-        <nav>
+    <nav>
+        <a href="#" style="font-weight: bold;">City of Trimble</a> <!-- City of Trimble on the left -->
+        <div>
             <a href="#">Home</a>
             <a href="pages/documents.html">Forms & Documents</a>
             <a href="pages/local.html">Local Businesses</a>
             <a href="pages/localgov.html">Local Government</a>
-        </nav>
+        </div>
+    </nav>
+
+    <header>
+        <h1>City of Trimble</h1>
     </header>
 
     <main class="main-content">
