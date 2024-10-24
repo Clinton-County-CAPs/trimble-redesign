@@ -47,10 +47,6 @@
             background-color: rgba(173, 216, 230, 0.5); /* Lighten background on hover */
             outline: none; /* Ensure no outline appears on hovering */
         }
-        .main-content {
-            background-color: #f9f9f9; /* White background for the main content */
-            padding: 20px;
-        }
         .image-section {
             text-align: center;
             background-color: #add8e6; /* Match the navbar background color */
@@ -60,6 +56,12 @@
             width: 100%; 
             max-width: 900px; /* Increased max width for the image */
             height: auto;
+        }
+        .tagline {
+            font-size: 1.2em; /* Smaller size for the tagline */
+            text-align: center; /* Center align the tagline */
+            margin: 10px 0; /* Space above and below the tagline */
+            color: #333; /* Color for the tagline */
         }
     </style>
 </head>
@@ -77,13 +79,13 @@
 
     <header>
         <h1>City of Trimble</h1>
+        <div class="tagline">The City by the Lake!</div> <!-- Tagline under the navbar -->
     </header>
 
-    <main class="main-content">
+    <main>
         <section class="image-section">
             <img src="img/Trimble.png" alt="Welcome to Trimble">
             <h2>City of Trimble</h2>
-            <p>The City by the Lake!</p>
         </section>
 
         <section style="text-align: center;">
