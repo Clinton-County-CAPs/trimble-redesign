@@ -12,6 +12,13 @@
             background-color: #f9f9f9; 
             color: #333;
         }
+        h1 {
+            font-size: 2.5em; /* Increased size for the header */
+            text-align: center; 
+            margin: 0; 
+            padding: 10px; 
+            font-weight: bold; 
+        }
         h2, h3 {
             font-weight: bold; /* Bolder text for headings */
         }
@@ -34,12 +41,21 @@
             background-color: rgba(173, 216, 230, 0.5); /* Lighten background on hover */
             outline: none; /* Ensure no outline appears on hovering */
         }
+        .main-content {
+            background-color: #f9f9f9; /* White background for the main content */
+            padding: 20px;
+        }
+        .image-section img {
+            width: 100%; 
+            max-width: 900px; /* Increased max width for the image */
+            height: auto;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1 style="text-align: center; margin: 0; padding: 10px; font-weight: bold;">City of Trimble</h1>
+        <h1>City of Trimble</h1>
         <nav>
             <a href="#">Home</a>
             <a href="pages/documents.html">Forms & Documents</a>
@@ -48,9 +64,9 @@
         </nav>
     </header>
 
-    <main style="padding: 20px;">
-        <section style="text-align: center;">
-            <img src="img/Trimble.png" alt="Welcome to Trimble" style="width: 100%; max-width: 800px; height: auto;">
+    <main class="main-content">
+        <section class="image-section" style="text-align: center;">
+            <img src="img/Trimble.png" alt="Welcome to Trimble">
             <h2>City of Trimble</h2>
             <p>The City by the Lake!</p>
         </section>
