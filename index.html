@@ -20,26 +20,29 @@
             font-weight: bold; 
         }
         .tagline {
-            font-size: 1.5em; /* Smaller size for the tagline */
-            text-align: center; /* Center align the tagline */
-            margin: 10px 0; /* Space above and below the tagline */
-            color: #333; /* Color for the tagline */
+            font-size: 1.2em; /* Smaller size for the tagline */
+            color: black; /* Set tagline color to black */
+            margin: 0; /* Remove margin for better alignment */
         }
         h2, h3 {
             font-weight: bold; /* Bolder text for headings */
         }
         nav {
             display: flex; /* Use flexbox for layout */
-            flex-direction: column; /* Stack items vertically */
-            align-items: center; /* Center items */
+            justify-content: space-between; /* Space between left and right items */
+            align-items: center; /* Center items vertically */
             padding: 15px 20px; /* Increased padding for nav */
             background-color: #add8e6; /* Background for nav */
-            height: auto; /* Allow height to adjust based on content */
         }
         .nav-title {
             font-weight: bold; /* Make it bold */
             font-size: 1.5em; /* Increased size for the title */
-            margin-bottom: 5px; /* Space below the title */
+            color: black; /* Set title color to black */
+        }
+        .nav-info {
+            display: flex;
+            flex-direction: column; /* Stack title and tagline vertically */
+            align-items: flex-start; /* Align to the left */
         }
         nav a {
             margin: 0 10px; /* Reduced margin for closer spacing */
@@ -69,8 +72,10 @@
 <body>
 
     <nav>
-        <div class="nav-title">City of Trimble</div> <!-- Bold and larger text -->
-        <div class="tagline">The City by the Lake!</div> <!-- Tagline under the navbar -->
+        <div class="nav-info">
+            <div class="nav-title">City of Trimble</div> <!-- Bold and larger text -->
+            <div class="tagline">The City by the Lake!</div> <!-- Tagline under the navbar -->
+        </div>
         <div>
             <a href="#">Home</a>
             <a href="pages/documents.html">Forms & Documents</a>
